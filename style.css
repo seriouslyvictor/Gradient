@@ -4,6 +4,7 @@
 }
 :root {
     --background:  #333;
+    --backgroundl: #fefefe;
     --orange: #f97316;
     --orangemaxlight: #ffedd5;
     --orangelighter: #fed7aa;
@@ -11,6 +12,11 @@
     --orangedark: #c2410c;
     --white: #efefef;
     --gradient: linear-gradient(to right, #F0CB35, #C02425); 
+    --gradientlight: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --reddark: #991b1b;
+    --redmid: #ef4444;
+    --redlight: #fca5a5;
+    
 
 }
 
@@ -92,3 +98,39 @@ li {
 }
 
 
+
+
+/* Light Theme */
+
+.light .container--card {
+    background-color: var(--backgroundl);
+    border: 2px solid var(--redmid);
+    box-shadow: 5px 10px 7px #5555553f;
+
+}
+
+.light .gradient--text,
+.light  i {
+    background: var(--gradientlight);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.light h2 {
+    border-bottom: 1px solid var(--redlight);
+}
+
+.light .imagem--perfil{
+    filter: saturate(70%);
+    border: 3px solid var(--background);
+}
+
+.light li {
+    color: var(--background);
+}
+
+.light .num {
+
+    color: var(--redmid);
+}
