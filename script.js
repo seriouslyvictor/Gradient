@@ -5,7 +5,7 @@ toggleEl.addEventListener("click", trocarTema);
 
 function trocarTema() {
   bodyEl.classList.toggle("light");
-  atualizarIcone();
+  toggleEl.src = toggleEl.src.includes("moon") ? "img/icon-sun.svg" : "img/icon-moon.svg";
 }
 
 function atualizarIcone(lightMode) {
